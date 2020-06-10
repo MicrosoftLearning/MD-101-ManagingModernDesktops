@@ -140,8 +140,7 @@ Dir \\lon-dc1\Labfiles\MigStore
     pressing Enter:
 
 ```
-./Scanstate \\LON-DC1\Labfiles\MigStore /i:migapp.xml /i:miguser.xml
-/i:folders.xml /config:Config.xml /ue:\* /ui:adatum\vera /o
+./Scanstate \\LON-DC1\Labfiles\MigStore /i:migapp.xml /i:miguser.xml /i:folders.xml /config:Config.xml /ue:\* /ui:adatum\vera /o
 
 ```
 9.  Wait until ScanState finishes, and then verify that the user state is
