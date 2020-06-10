@@ -100,7 +100,7 @@ A. Datum Corporation’s has decided to manage all developers in the company usi
 1.  On **LON-CL3**, On the taskbar, select **Microsoft Edge**, and navigate to
     <https://businessstore.microsoft.com>.
 
-2.  Sign in to the store as **Admin\@yourtenant.onmicroft.com** with your tenant password.
+2.  Sign in to the store as **Admin\@yourtenant.onmicrosoft.com** with your tenant password.
 
 3.  In the **Search field** on the right, type **Company Portal** and press
     **Enter**. Accept the consent dialog if prompted.
@@ -114,14 +114,14 @@ A. Datum Corporation’s has decided to manage all developers in the company usi
     Users**.
 
 7.  On the **Assign to people** dialog, type
-    **DiegoS\@yourtenant.onmicroft.com**. Select **Assign** and then **Close**.
+    **DiegoS\@yourtenant.onmicrosoft.com**. Select **Assign** and then **Close**.
 
-8.  Switch to **LON-CL4** and sign in as **DiegoS\@yourtenant.onmicroft.com.**
+8.  Switch to **LON-CL4** and sign in as **DiegoS\@yourtenant.onmicrosoft.com.**
 
 9.  On the taskbar, select **Microsoft Edge** and navigate to
     <https://businessstore.microsoft.com>.
 
-10. Select **Sign In**. Login as **DiegoS\@yourtenant.onmicroft.com** if it does
+10. Select **Sign In**. Login as **DiegoS\@yourtenant.onmicrosoft.com** if it does
     not by default.
 
 11. In the search box, type **Company Portal** and press **Enter**.
