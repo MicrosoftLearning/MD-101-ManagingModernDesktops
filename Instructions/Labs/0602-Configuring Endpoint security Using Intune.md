@@ -24,7 +24,7 @@ Settings will be verified by testing on an enrolled device, SEA-WS2 and a non-en
 6. On the **Endpoint security |Antivirus** pane, select **Create Policy**.
 7. In the **Create a profile** pane, select **Windows 10 and later** for Platform. In the Profile  list, select **Windows Security experience**. Then select **Create**.
 8. On the Basics tab, in the **Name** field, enter **Windows Security Settings**. Select **Next**.
-9. On the **Configuration settings** tab, expand the **Windows Security **section. 
+9. On the **Configuration settings** tab, expand the **Windows Security** section. 
 10. Under Windows security, configure the following settings:
 
     - Enable tamper protection to prevent Microsoft Defender from being disabled: Enable
