@@ -15,20 +15,13 @@ All of the developers at Contoso have iPhones running the latest version of iOS.
 
 ### Task 1: Create an App protection policy in Intune
 
-1.  On **SEA-CL1**, sign in as **Contoso\\Administrator** with the password **Pa55w.rd**.
-    
+1. On **SEA-CL1**, sign in as **Contoso\\Administrator** with the password **Pa55w.rd**. 
 2. On the taskbar, select **Microsoft Edge**.
-
 3. In Microsoft Edge, type **https://endpoint.microsoft.com** in the address bar, and then press **Enter**. 
-
 4. Sign in as **admin\@yourtenant.onmicrosoft.com** with the tenant Admin password.
-
 5. On the **Microsoft Endpoint Manager admin center** page, select **Apps**.
-
 6. On the **Apps | Overview** blade, under **Policy**, select **App protection policies**. 
-
 7. In the details pane, select **Create policy** and then select **iOS/iPadOS**.
-
 8. On the **Basics** tab, configure the following options and select **Next**:
 
    -   Name: **Outlook – Developers**
@@ -36,9 +29,7 @@ All of the developers at Contoso have iPhones running the latest version of iOS.
    -   Description: **Policy to prevent cut/copy and paste from Outlook**
 
 9. On the **Apps** tab, select **Select public apps**.
-
 10. On the **Select apps to target** blade, in the text box, type **Outlook**. Select **Microsoft Outlook** and then select **Select**, and then select **Next**.
-
 11. On the **Data protection** tab, configure the following options and select **Next**:
 
     -   Backup Org data to ITunes and iCloud backups: **Block**
@@ -54,20 +45,17 @@ All of the developers at Contoso have iPhones running the latest version of iOS.
 12. On the **Access requirements** tab, configure the following options and select **Next**:
 
     -   PIN for access: **Not required**
+
     -   Work or school account credentials for access: **Require**
 
 13. On the **Conditional launch** tab, review the settings. Select **Next**.
 
-     _Note: Here you can set the sign-in security requirements for your access protection policy. You can select a setting and enter the value that users must meet to sign in to your company app. Make note of the various settings but do not change anything._
+    _Note: Here you can set the sign-in security requirements for your access protection policy. You can select a setting and enter the value that users must meet to sign in to your company app. Make note of the various settings but do not change anything._
 
 14. On the Assignments tab, select **Select groups to include**. 
-
 15. Select the **Contoso Developer devices** group, then choose **Select**. 
-
-16. Select **Next**.  On the **Review + create** tab, review the settings and select **Create**. 
-
+16. Select **Next**. On the **Review + create** tab, review the settings and select **Create**. 
 17. On the **Apps | App protection policies** blade, in the details pane, verify that **Outlook - Developers** is listed.
-
 18. Close Microsoft Edge.
 
 **Results**: After completing this exercise, you will have successfully configured an App protection policy for a mobile device.

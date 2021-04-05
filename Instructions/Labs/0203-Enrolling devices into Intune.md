@@ -10,76 +10,71 @@ You have assigned Aaron Nicholls appropriate licenses and will now test the proc
 
 ### Task 1: Automatically enroll a Windows 10 device to Microsoft Intune
 
-1.  Sign in to SEA-WS3 as **Admin** with the password of **Pa55w.rd**.
-2.  Select **Start** and then select **Settings**.
-3.  In **Settings**, select **Accounts**.
-4.  In the Accounts navigation pane, select **Access work or school**.
-5.  In the **Access work or school** page, select **Connect**.
-6.  In the **Microsoft account** window, select **Join this device to Azure Active Directory**.
-7.  On the **Sign in** page, type **Aaron\@yourtenant.onmicrosoft.com** and then select **Next**.
-8.  On the **Enter password** page, enter **Pa55w.rd** and then select **Sign in**.
-9.  On the **Make sure this is your organization** dialog box, select **Join**.
-10.  On the **You're all set!** page, read the information and then select **Done**.
-11.  In the **Access work or school** section, verify that **Connected to Contoso's Azure AD** displays.
-12.  Select **Connected to Contoso's Azure AD** and then select **Info**.
-13.  Take note of the information regarding the areas managed by Contoso, scroll down, and then select **Sync**. This will force a Device sync with Intune.
-14.  Close the **Settings** window.
+1. Sign in to SEA-WS3 as **Admin** with the password of **Pa55w.rd**.
+2. Select **Start** and then select **Settings**.
+3. In **Settings**, select **Accounts**.
+4. In the Accounts navigation pane, select **Access work or school**.
+5. In the **Access work or school** page, select **Connect**.
+6. In the **Microsoft account** window, select **Join this device to Azure Active Directory**.
+7. On the **Sign in** page, type **Aaron\@yourtenant.onmicrosoft.com** and then select **Next**.
+8. On the **Enter password** page, enter **Pa55w.rd** and then select **Sign in**.
+9. On the **Make sure this is your organization** dialog box, select **Join**.
+10. On the **You're all set!** page, read the information and then select **Done**.
+11. In the **Access work or school** section, verify that **Connected to Contoso's Azure AD** displays.
+12. Select **Connected to Contoso's Azure AD** and then select **Info**.
+13. Take note of the information regarding the areas managed by Contoso, scroll down, and then select **Sync**. This will force a Device sync with Intune.
+14. Close the **Settings** window.
 
 ### Task 2: Validate device enrollment into Azure AD And Intune
 
-1.  On the **SEA-WS3** taskbar, select **Start**, type **certlm.msc**, press **Enter** and when prompted select **Yes**.
+1. On the **SEA-WS3** taskbar, select **Start**, type **certlm.msc**, press **Enter** and when prompted select **Yes**.
+2. In the **Certificates** console, in the navigation pane, expand **Personal** and select the **Certificate** node. Verify that the following certificates are listed in the details pane:
     
-2.  In the **Certificates** console, in the navigation pane, expand **Personal** and select the **Certificate** node. Verify that the following certificates are listed in the details pane:
+   -   **Microsoft Intune MDM Device CA**
+
+   -   **MS-Organization-Access**
+
+   -   **MS-Organization-P2P-Access \[2021\]**
+
+    _Note: This indicates that the device is enrolled in Azure AD and Intune._
+
+3. Close the Certificates window.
+4. Right-click **Start**, and then select **Windows PowerShell (Admin)**. When prompted select **Yes**. 
+5. In the PowerShell console, type the following and press **Enter**: 
+
+   ```
+   dsregcmd /status
+   ```
+
+6. In the output under **Device State**, verify that **AzureAdJoined : YES** is displayed. This indicates that the device is Azure AD joined.
+7. In the output under **Tenant Details**, verify that the following three entries exist:
     
-    -   Microsoft Intune MDM Device CA
-
-    -   MS-Organization-Access
-
-    -   MS-Organization-P2P-Access \[2021\]
-
-    This indicates that the device is enrolled in Azure AD and Intune.
-
-3.  Close the Certificates window.
-
-4.  Right-click **Start**, and then select **Windows PowerShell (Admin)**. When prompted select **Yes**.
+   -   **mdmUrl : https://enrollment.manage.microsoft.com/enrollmentserver/discovery.svc**
     
-5.  In the PowerShell console, type the following and press **Enter**: 
-```
-dsregcmd /status
+   -   **mdmTouUrl : https://portal.manage.microsoft.com/TermsofUse.aspx**
+    
+   -   **mdmComplianceUrl : https://portal.manage.microsoft.com/?portalAction=Compliance**
+    
+   _Note: These entries indicate that the device is enrolled in Intune._
 
-```
-
-6.  In the output under **Device State**, verify that **AzureAdJoined : YES** is displayed. This indicates that the device is Azure AD joined.
-    
-7.  In the output under **Tenant Details**, verify that the following three entries exist:
-    
--   mdmUrl :
-    **https://enrollment.manage.microsoft.com/enrollmentserver/discovery.svc**
-    
--   mdmTouUrl : **https://portal.manage.microsoft.com/TermsofUse.aspx**
-    
--   mdmComplianceUrl : **https://portal.manage.microsoft.com/?portalAction=Compliance**
-    
-
-_Note: These entries indicate that the device is enrolled in Intune._
 
 ### Task 3: Sign in as an Azure AD user
 
-1.  Sign out of **SEA-WS3**.
-2.  Select **Other user**, and sign in as **Aaron\@yourtenant.onmicrosoft.com** with the password **Pa55w.rd**. Wait for the profile to be created.
-3.  At the **Use Windows Hello with your account** page, select **OK**.
-4.  On the **More information required** page, select **Next**.
-5.  On the **Keep your account secure** page, select **I want to set up a different method**.
-6.  In the **Choose a different method** dialog box, select **Phone** and then select **Confirm**.
-7.  On the **Phone** page, in the **Enter phone number** field, enter your mobile phone number which is able to receive text messages. Select **Next**.
-8.  When you receive the verification code, enter the code on the Phone page and then select **Next**.
-9.  On the verification page, select **Next** and then select **Done**.
-10.  On the **Set up a PIN** page, in the **New PIN** and **Confirm PIN** boxes, type **102938** and then select **OK**.
-11.  On the **All set!** page, select **OK**.
+1. Sign out of **SEA-WS3**.
+2. Select **Other user**, and sign in as **Aaron\@yourtenant.onmicrosoft.com** with the password **Pa55w.rd**. Wait for the profile to be created.
+3. At the **Use Windows Hello with your account** page, select **OK**.
+4. On the **More information required** page, select **Next**.
+5. On the **Keep your account secure** page, select **I want to set up a different method**.
+6. In the **Choose a different method** dialog box, select **Phone** and then select **Confirm**.
+7. On the **Phone** page, in the **Enter phone number** field, enter your mobile phone number which is able to receive text messages. Select **Next**.
+8. When you receive the verification code, enter the code on the Phone page and then select **Next**.
+9. On the verification page, select **Next** and then select **Done**.
+10. On the **Set up a PIN** page, in the **New PIN** and **Confirm PIN** boxes, type **102938** and then select **OK**.
+11. On the **All set!** page, select **OK**.
 
 ### Task 4: Verifying device enrollment in the Intune console
 
-1.  Switch to **SEA-CL1**. 
+1. Switch to **SEA-CL1**. 
     
 2. In Microsoft Edge, type **https://endpoint.microsoft.com** in the address bar, and then press **Enter**. In the navigation pane, select **Devices**.
 
@@ -87,7 +82,7 @@ _Note: These entries indicate that the device is enrolled in Intune._
 
 4. On the **Devices | Overview** blade, select **All devices** and verify that **SEA-WS3** is listed.
 
-5. Note that for SEA-WS3, the **Managed by** column displays **Intune** and the **Ownership** column displays **Corporate**.  
+5. Note that for SEA-WS3, the **Managed by** column displays **Intune** and the **Ownership** column displays **Corporate**. 
 
    _Note: This view lists devices that are joined to Azure AD. Remember that you configured automatic enrollment between Azure AD and Intune, and because of that, any device that is joined to Azure AD is automatically enrolled to Intune. Any devices joined prior to setting up enrollment are only joined to Azure AD, but not enrolled in Intune._
 

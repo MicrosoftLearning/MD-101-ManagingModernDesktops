@@ -23,7 +23,7 @@ You have decided to integrate Microsoft Store for Business with Intune. You need
 9. Select the **Distribute** page.
 10. On the Distribute page, take note of the current name for the private store. The current name is the name associated with the tenant.
 11. Under Management tools, verify that **Microsoft Intune** Status is set to **Active**. If it is not, under Action select **Activate**.
-12. In Microsoft Edge, open a new tab and browse to https://endpoint.microsoft.com. The Microsoft Endpoint Manager admin center opens.
+12. In Microsoft Edge, open a new tab and browse to **https://endpoint.microsoft.com**. The Microsoft Endpoint Manager admin center opens.
 13. In the Microsoft Endpoint admin center, in the navigation pane, select **Tenant administration**.
 14. In the **Tenant admin** navigation pane, select **Connectors and tokens**.
 15. On the **Connectors and tokens** page, select **Microsoft Store for Business**. 
@@ -32,27 +32,27 @@ You have decided to integrate Microsoft Store for Business with Intune. You need
 
 ### Task 2: Purchasing and Adding apps to the Private Store 
 
-1.  In Microsoft Edge, switch to the **Microsoft Store for Business** tab (if there's no tab click on the url link **Open business store**).
-2.  In the menu bar, select **Shop for my group**.
-3.  Scroll down to the **Made by Microsoft** section.
-4.  In the **Made by Microsoft** section, select **Translator**.
-5.  On the **Translator** page, select **Get the app**.
-6.  Click on the box next to the **I accept this agreement** and select **Accept**
-7.  On the **Thanks for your order** page, select **Close**.
-8.  On the Translator page, select the ellipse button and then select **Manage**.
-9.  On the Translator manage page, select the **Private store availability** tab.
-10.  On the **Private store availability** tab, under **Choose groups of people who can see this app**, select **Everyone**.
-11.  Repeat steps 2-9 and select the app named **Fresh Paint**.
-12.  In the menu bar, select **Contoso**. This is a view of the private store which displays the apps that you have purchased and made available to users.
+1. In Microsoft Edge, switch to the **Microsoft Store for Business** tab (if there's no tab click on the url link **Open business store**).
+2. In the menu bar, select **Shop for my group**.
+3. Scroll down to the **Made by Microsoft** section.
+4. In the **Made by Microsoft** section, select **Translator**.
+5. On the **Translator** page, select **Get the app**.
+6. Click on the box next to the **I accept this agreement** and select **Accept**
+7. On the **Thanks for your order** page, select **Close**.
+8. On the Translator page, select the ellipse button and then select **Manage**.
+9. On the Translator manage page, select the **Private store availability** tab.
+10. On the **Private store availability** tab, under **Choose groups of people who can see this app**, select **Everyone**.
+11. Repeat steps 2-9 and select the app named **Fresh Paint**.
+12. In the menu bar, select **Contoso**. This is a view of the private store which displays the apps that you have purchased and made available to users.
 
 ### Task 3: Review the apps in the Company store
 
-1.  Switch to **SEA-WS3**.
-2.  Sign in as as Aaron Nicholls with the PIN **102938**. 
-3.  On the taskbar, select **Microsoft Store**.
-4.  In the **Microsoft Store**, in the menu bar select **Contoso**. (You may have to select More to display the Contoso menu item.)
-5.  In the **Contoso** store, review the apps that are available. You should see Fresh Paint and Translator as available options.
-6.  Close the Microsoft Store.
+1. Switch to **SEA-WS3**.
+2. Sign in as as Aaron Nicholls with the PIN **102938**. 
+3. On the taskbar, select **Microsoft Store**.
+4. In the **Microsoft Store**, in the menu bar select **Contoso**. (You may have to select More to display the Contoso menu item.)
+5. In the **Contoso** store, review the apps that are available. You should see Fresh Paint and Translator as available options.
+6. Close the Microsoft Store.
 
 **Results**: After completing this exercise, you will have successfully integrated Microsoft Store for Business with Intune.
 
@@ -64,66 +64,52 @@ Now that you have integrated Microsoft Store for Business with Intune, you need 
 
 ### Task 1: Synchronize Intune with Microsoft Store for Business
 
-1.  In Microsoft Edge, switch to the tab that contains Microsoft Endpoint Manager admin center.
-2.  In the Microsoft Endpoint admin center, in the navigation pane, select **Tenant administration**.
-3.  In the **Tenant admin** navigation pane, select **Connectors and tokens**.
-4.  On the **Connectors and tokens** page, select **Microsoft Store for Business**. 
-5.  At the bottom of the Microsoft Store for Business page, select **Sync**.
+1. In Microsoft Edge, switch to the tab that contains Microsoft Endpoint Manager admin center.
+2. In the Microsoft Endpoint admin center, in the navigation pane, select **Tenant administration**.
+3. In the **Tenant admin** navigation pane, select **Connectors and tokens**.
+4. On the **Connectors and tokens** page, select **Microsoft Store for Business**. 
+5. At the bottom of the Microsoft Store for Business page, select **Sync**.
 
 ### Task 2: Deploy Microsoft Store for Business apps
 
-1.  On the **Microsoft Endpoint Manager admin center** pane, select **Apps**.
-2.  In the **Apps | Overview** blade, select **All Apps**. Notice the Apps that have synced from Microsoft Store for Business.
-3.  In the app list, select **Translator (Online)**.
-4.  On the **Translator (Online)** pane, select **Properties**.
-5.  Scroll down to the **Assignments** section and then select **Edit**.
-6.  On the **Edit application** page, under **Required**, select **Add all devices**.
-7.  Select **Review + save** and then select **Save**.
+1. On the **Microsoft Endpoint Manager admin center** pane, select **Apps**.
+2. In the **Apps | Overview** blade, select **All Apps**. Notice the Apps that have synced from Microsoft Store for Business.
+3. In the app list, select **Translator (Online)**.
+4. On the **Translator (Online)** pane, select **Properties**.
+5. Scroll down to the **Assignments** section and then select **Edit**.
+6. On the **Edit application** page, under **Required**, select **Add all devices**.
+7. Select **Review + save** and then select **Save**.
 
 ### Task 3: Force policy synchronization from the Intune console
 
-1.  In the **Microsoft Endpoint Manager admin center**, select **Devices** and then select **All devices**.
-2.  In the details pane, select **SEA-WS3**. 
-3.  On the **SEA-WS3** blade, select **Sync** and when prompted select **Yes**. Intune will contact the device and tell it to synchronize all policies. This may take up to 5 minutes.
+1. In the **Microsoft Endpoint Manager admin center**, select **Devices** and then select **All devices**.
+2. In the details pane, select **SEA-WS3**. 
+3. On the **SEA-WS3** blade, select **Sync** and when prompted select **Yes**. Intune will contact the device and tell it to synchronize all policies. This may take up to 5 minutes.
 
 ### Task 4: Verify the app has installed
 
-1.  Switch to **SEA-WS3** and if necessary sign in as Aaron Nicholls with the PIN **102938**. Wait approximately 5 minutes for the app to install on the device.
-
-2.  On **SEA-WS3**, on the taskbar, select **Start** and then select the **Settings** app.
-
-3.  In the **Settings** app, select the **Apps** tile and on the **Apps & features** page, scroll down and verify that **Translator** is listed.
-
-4.  Close the **Settings** app and select the **Start** button.
-
-5.  In the app list, scroll down to **T** and select **Translator** and verify that the app opens.
-
-6.  Close all open windows.
+1. Switch to **SEA-WS3** and if necessary sign in as Aaron Nicholls with the PIN **102938**. Wait approximately 5 minutes for the app to install on the device.
+2. On **SEA-WS3**, on the taskbar, select **Start** and then select the **Settings** app.
+3. In the **Settings** app, select the **Apps** tile and on the **Apps & features** page, scroll down and verify that **Translator** is listed.
+4. Close the **Settings** app and select the **Start** button.
+5. In the app list, scroll down to **T** and select **Translator** and verify that the app opens.
+6. Close all open windows.
 
 ### Task 5: Monitor app installation status in Intune
 
 1. Switch to **SEA-CL1**.
-
 2. In the **Microsoft Endpoint Manager admin center**, select **Apps** in the navigation menu.
-
 3. On the **Apps | Overview** blade, select **Monitor** and then select **App install status**. In the details pane, select **Translator (Online)**.
-
 4. In the details pane, under **Device status** and under **User status**, verify that **1** is displayed under Installed. 
 
    _Note: This indicates that the app is installed on one device and for one user. Note that it may take some time for the information to display._
 
 5. Select **Device install status**. In the details pane, you can see the devices that the app is installed on, and also the name of the user. 
-
 6. In the **Microsoft Endpoint Manager admin center**, select **Devices**.
-
 7. On the **Devices | Overview** blade, select **All devices** and then in the details pane, select **SEA-WS3**.
-
 8. On the **SEA-WS3** blade, select **Managed Apps**.
-
 9. On the **SEA-WS3 | Managed Apps** blade, in the details pane, select **Translator**.
-
 10. On the **Translator - Installation details** blade, you can see the entire lifecycle of the application, that is - when it was created, assigned, installation time and status and the last time the device checked in (synced with Intune).
-
 11. Close all open windows.
 
 **Results**: After completing this exercise, you will have successfully deployed a Microsoft Store for Business app to a Windows 10 device using Intune.
