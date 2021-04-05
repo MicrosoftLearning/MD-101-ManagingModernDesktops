@@ -27,17 +27,17 @@ Settings will be verified by testing on an enrolled device, SEA-WS2 and a non-en
 9. On the **Configuration settings** tab, expand the **Windows Security** section. 
 10. Under Windows security, configure the following settings:
 
-    - Enable tamper protection to prevent Microsoft Defender from being disabled: Enable
+    - Enable tamper protection to prevent Microsoft Defender from being disabled: **Enable**
 
-    - Hide the Account protection area in the Windows Security app: Yes
+    - Hide the Account protection area in the Windows Security app: **Yes**
 
-    - Hide App and browser control are in the Windows Security app: Yes
+    - Hide App and browser control are in the Windows Security app: **Yes**
 
-    - Hide the Device security area in the Windows Security app: Yes
+    - Hide the Device security area in the Windows Security app: **Yes**
 
-    - Hide the Device performance and health area in the Windows Security app: Yes
+    - Hide the Device performance and health area in the Windows Security app: **Yes**
 
-    - Hide the Family options area in the Windows Security app: Yes
+    - Hide the Family options area in the Windows Security app: **Yes**
 
 11. Next to **Organization's support contact information** select **Display in app and in notifications**.
 12. In the **Contact name** field, enter **Contoso IT**.
@@ -54,25 +54,25 @@ Settings will be verified by testing on an enrolled device, SEA-WS2 and a non-en
 4. On the **Configuration settings** tab, expand the **Real-time protection** section. 
 5. Under **Real-time protection**, configure the following settings:
 
-   - Turn on real-time protection: Yes
+   - Turn on real-time protection: **Yes**
 
-   - Monitor for incoming and outgoing files: Only monitor incoming files
+   - Monitor for incoming and outgoing files: **Only monitor incoming files**
 
-   - Scan all downloaded files and attachments: Yes
+   - Scan all downloaded files and attachments: **Yes**
 
 6. On the **Configuration settings** tab, expand the **Remediation** section. 
 7. Under **Remediation**, configure the following settings:
 
-   - Number of days to keep quarantined malware: 60
+   - Number of days to keep quarantined malware: **60**
 
-   - Submit samples consent: Always prompt
+   - Submit samples consent: **Always prompt**
 
 8. On the **Configuration settings** tab, expand the **Scan** section. 
 9. Under **Scan**, configure the following settings:
 
-   - Run daily quick scan at: 12 PM
+   - Run daily quick scan at: **12 PM**
 
-   - Check for signature updates before running scan: Yes
+   - Check for signature updates before running scan: **Yes**
 
 10. On the **Configuration settings** tab, select **Next**.
 11. On the **Scope tags** page, select **Next**.
