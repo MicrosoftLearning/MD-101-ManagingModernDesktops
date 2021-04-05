@@ -119,9 +119,9 @@ Some Contoso Windows devices are currently joined to the local Active Directory 
 11. On the taskbar, right-click **Start** and select **Windows Powershell (Admin)**.
 12. In the **Windows PowerShell** window, type the following command, and then press **Enter**:
 
-   ```powershell
-   Start-ADSyncSyncCycle -PolicyType Initial
-   ```
+    ```powershell
+    Start-ADSyncSyncCycle -PolicyType Initial
+    ```
 
 13. Close the PowerShell window.
 
