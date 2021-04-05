@@ -33,9 +33,9 @@ Contoso has both a Microsoft Endpoint Configuration Manager implementation and M
 13. On the taskbar, right-click **Start** and select **Windows PowerShell (Admin)**.
 14. In the **Windows PowerShell** window, type the following command, and then press **Enter**:
 
-   ```
-   dsregcmd /status
-   ```
+    ```
+    dsregcmd /status
+    ```
 
 15. In the output under **Device State**, verify that **AzureAdJoined : YES** and **DomainJoined : YES** are displayed.
 
