@@ -54,21 +54,21 @@ Contoso IT is planning to roll out a deployment of new Windows 10 devices using 
 10. When prompted, type **Y**, and then press Enter.
 11. At the Windows PowerShell command-line prompt, type the following cmdlet, and then press **Enter**:
 
-   ```powershell
-   Get-WindowsAutoPilotInfo.ps1 -OutputFile C:\Computer.csv
-   ```
+    ```powershell
+    Get-WindowsAutoPilotInfo.ps1 -OutputFile C:\Computer.csv
+    ```
 
 12. At the Windows PowerShell command-line prompt, type the following command, press **Enter**, and then review the file content:
 
-   ```powershell
-   type C:\Computer.csv
-   ```
+    ```powershell
+    type C:\Computer.csv
+    ```
 
 13. At the Windows PowerShell command-line prompt, type the following command, press **Enter**. This will copy the file to SEA-SVR2:
 
-   ```powershell
-   copy c:\computer.csv \\sea-svr2\labfiles
-   ```
+    ```powershell
+    copy c:\computer.csv \\sea-svr2\labfiles
+    ```
 
 14. Close the Windows PowerShell command prompt.
 
