@@ -21,9 +21,9 @@ You need to deploy a new Windows 10 workstation named SEA-WS4. You decide to use
 9. On the **Descriptive Name** page, accept the default value and select **Next**.
 10. On the **Options** page, configure the following, and then select **Next**:
 
-    - Ask to set the local Administrator password: Enabled
+    - Ask to set the local Administrator password: **Enabled**
 
-    - All other check boxes: Disabled
+    - All other check boxes: **Disabled**
 
 11. On the **Summary** page, review the information and then select **Next**. 
 12. On the **Confirmation** page, ensure that the process completed successfully and then select **Finish**.
@@ -99,11 +99,11 @@ You need to deploy a new Windows 10 workstation named SEA-WS4. You decide to use
 7. In the **Windows PE Customizations** section, next to **Scratch space size**, select **64**.
 8. Select the **Features** tab and then select the check box next to the following Feature Packs:
 
-   - DISM Cmdlets
+   - **DISM Cmdlets**
 
-   - Windows PowerShell
+   - **Windows PowerShell**
 
-   - Microsoft Data Access Components (MDAC/ADO) support
+   - **Microsoft Data Access Components (MDAC/ADO) support**
 
 9. In the **MDT Deployment Share Properties** window, select **OK**.
 10. Right-click **MDT Deployment Share** and then select **Update Deployment Share**. The Update Deployment Share Wizard opens.
