@@ -48,9 +48,9 @@ You need to configure Azure Active Directory device settings to ensure that all 
 1. On SEA-WS1, right-click **Start**, and then select **Windows PowerShell (Admin)**. At the User Account Control, select **Yes**.
 2. In the PowerShell console, type the following and press **Enter**: 
 
-```
-dsregcmd /status
-```
+   ```
+   dsregcmd /status
+   ```
 
 3. In the output under **Device State**, verify that **AzureAdJoined : YES** is displayed. This indicates that the device is Azure AD joined.
 4. Close PowerShell and sign out of SEA-WS1.
@@ -119,9 +119,9 @@ Some Contoso Windows devices are currently joined to the local Active Directory 
 11. On the taskbar, right-click **Start** and select **Windows Powershell (Admin)**.
 12. In the **Windows PowerShell** window, type the following command, and then press **Enter**:
 
-```powershell
-Start-ADSyncSyncCycle -PolicyType Initial
-```
+   ```powershell
+   Start-ADSyncSyncCycle -PolicyType Initial
+   ```
 
 13. Close the PowerShell window.
 
