@@ -68,9 +68,9 @@ The Help Desk has indicated that a large number of support tickets are related t
 3. At the **Windows PowerShell** command prompt, type the following command, and
     then press **Enter**:
 
-```powershell
-Start-ADSyncSyncCycle –PolicyType Delta
-```
+   ```powershell
+   Start-ADSyncSyncCycle –PolicyType Delta
+   ```
 
 4. Close Windows PowerShell, and then wait for approximately 3-4 minutes.
 5. Switch to **SEA-CL2** and sign out if necessary.
