@@ -44,11 +44,11 @@ Contoso uses Microsoft Endpoint Configuration Manager to manage desktop workstat
 7. In the **Properties** dialog box, select the **Requirements** tab and then select **Add**. 
 8. In the **Create Requirement** dialog box, configure the following and then select **OK**:
 
-   - Category: Device
+   - Category: **Device**
 
-   - Condition: Operating System
+   - Condition: **Operating System**
 
-   - Rule type: Value
+   - Rule type: **Value**
 
    - Operator: One of Windows 10 (Select the check box next to Windows 10)
 
