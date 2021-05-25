@@ -78,7 +78,7 @@ New-MsolUser –UserPrincipalName cgodinez@yourtenant.onmicrosoft.com -DisplayNa
 
 ```
 
-6.  In the **Windows PowerShell** window, type the following command, and then press **Enter**:
+6.  In the **Windows PowerShell** window, type the following command, and then press **Enter** When prompted at the NuGet enter **Y** and at the Untrusted repository promt enter **A**:
 
 ```
 Get-MsolUser
