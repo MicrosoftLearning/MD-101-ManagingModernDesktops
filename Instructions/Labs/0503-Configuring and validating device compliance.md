@@ -70,7 +70,7 @@ When a user uses a device that is marked as non-compliant, they should not be ab
 
 1. On **SEA-CL1**, on the taskbar, select **Microsoft Edge**.
 
-2. In Microsoft Edge, type **Outlook.office.com** and then press Enter.
+2. In Microsoft Edge, type **outlook.office.com** and then press Enter.
 
 3. On the pick an account dialog box, select use another account.
 
