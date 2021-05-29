@@ -36,7 +36,7 @@ You've also been told that several more employees will be hired over the next co
 12.  On the **Users | All users** page, select **New user**.
 13.  On the **New User** page, ensure that **Create user** is selected, enter the following:
 
-     -  User Name: **ereeve@yourtenant.onmicrosoft.com**
+     -  User Name: **ereeve\@yourtenant.onmicrosoft.com**
      -  Name: **Edmund Reeve**
 
 14.  Select **Let me create the password.**
@@ -74,7 +74,9 @@ Connect-MsolService
 5.  In the **Windows PowerShell** window, type the following code to create a new user, and then press **Enter**. Be sure to replace "yourtenant" with your assigned tenant name:
 
 ```
-New-MsolUser –UserPrincipalName cgodinez@yourtenant.onmicrosoft.com -DisplayName “Cody Godinez” -FirstName “Cody” -LastName “Godinez” -Password ‘Pa55w.rd’ -ForceChangePassword $false -UsageLocation “US”
+New-MsolUser –UserPrincipalName cgodinez@yourtenant.onmicrosoft.com
+-DisplayName “Cody Godinez” -FirstName “Cody” -LastName “Godinez” -Password
+‘Pa55w.rd’ -ForceChangePassword $false -UsageLocation “US”
 
 ```
 
@@ -173,7 +175,8 @@ $user = Get-MsolUser | Where-Object {$_.DisplayName -eq “Cody Godinez”}
 6.  In the **Windows PowerShell** window, type the following code to add Cody to Contoso_Sales using set variables, and then press **Enter**:
 
 ```
-Add-MsolGroupMember -GroupObjectId $group.ObjectId -GroupMemberType "User" -GroupMemberObjectId $user.ObjectId
+Add-MsolGroupMember -GroupObjectId $group.ObjectId -GroupMemberType "User"
+-GroupMemberObjectId $user.ObjectId
 
 ```
 
