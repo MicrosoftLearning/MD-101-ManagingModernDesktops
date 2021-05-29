@@ -34,10 +34,7 @@ If a device meets these requirements, it will be marked as compliant. If the dev
      field, type **10.0.19041.329**.
 11.  On the **Compliance settings** tab, expand **System Security**. Set the **Microsoft Defender Antimalware** setting to **Require**. 
 12.  Select **Next**. On the **Actions for noncompliance** tab, note the action to Mark device noncompliant default setting is immediately. Review how you can configure the number of days after which the device is marked as noncompliant, and configuration additional actions. 
-13.  Select **Next**. On the **Assignments** tab, under **Included groups** select **Add groups**.  Select **Windows Devices**, choose **Select**, and then select **Next**.
-   
-     _Note: The **Windows Devices** group was created in the Module 3 lab._
-
+13.  Select **Next**. On the **Assignments** tab, choose **Select groups to include**.  Select **Windows Devices**, choose **Select**, and then select **Next**. Note: The **Windows Devices** group was created in the Module 3 lab. 
 14.  Select **Create**.
 15.  In the navigation menu, select **Devices** and then in the Devices navigation pane, select **Compliance policies**.
 16.  On the **Compliance policies** page, select **Compliance policy settings**.
@@ -98,7 +95,7 @@ When a user uses a device that is marked as non-compliant, they should not be ab
 
 13.  Close Microsoft Edge and sign out of SEA-WS3.
 
-### Task 3: Disable the conditional access policy
+### Task 3: Remove the conditional access policy
 
 1.  Switch to **SEA-CL1**.
 2.  On the taskbar, select **Microsoft Edge**.
